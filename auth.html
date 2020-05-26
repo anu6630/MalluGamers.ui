@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title> Processing.. Please wait</title>
+	</head>
+	<body>
+		<h2>
+			Please wait. Processing
+		</h2>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" type="text/css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js"></script>
+    
+		
+		<script>
+			function getParameterByName(name, url) {
+				if (!url) url = window.location.href;
+				name = name.replace(/[\[\]]/g, '\\$&');
+				var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+					results = regex.exec(url);
+				if (!results) return null;
+				if (!results[2]) return '';
+				return decodeURIComponent(results[2].replace(/\+/g, ' '));
+			}
+			var token = getParameterByName("token");
+			if(token){
+				 localStorage.setItem('token',token);
+				 var url = localStorage.getItem("redirect_uri_private");
+				 if(url.includes("?")){
+					url = url + "&auth_result=success";
+				 } else{
+					url = url + "?auth_result=success";
+				 }
+				
+				 window.location.replace(url);
+			} else {
+			    localStorage.removeItem('token');
+				var url = localStorage.getItem("redirect_uri_private");
+				if(url.includes("?")){
+					url = url + "&auth_result=failed&error="+getParameterByName("error");
+				} else {
+					url = url + "?auth_result=failed&error="+getParameterByName("error");
+				}
+		        window.location.replace(url);
+			}
+		</script>
+	</body>
+</html>

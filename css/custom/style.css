@@ -1,0 +1,320 @@
+.social-login img {
+    height: 30px;
+
+}
+
+.login-sign-up-link {
+	margin-top: 10px;
+	cursor: pointer;
+}
+.inline-msg{
+	color: white;
+	font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-left: 10px
+}
+
+
+.button-btn-link {
+    display: inline-flex;
+    background: #5f0f0f;
+    width: 150px;
+    border: 1px solid #ffdbdb;
+    margin: 20px 20px 20px 5px;
+    color: #BFC0C0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button-btn-link a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
+  
+}
+
+.h2-text {
+	color: #d49797;	
+}
+
+.h2-text-white {
+	color : white;
+}
+
+.h2-rule {
+	color : #7b463e;
+	margin-top: 5px;
+	
+}
+
+
+/*Cookie Consent Begin*/
+.cookieConsent {   
+	background-color: rgba(20,20,20,0.8);
+    font-size: 18px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 12px 0 8px 30px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 200;
+}
+.cookieConsent a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closeCookieConsent {  
+    padding: 10px;
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 40px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+.cookieConsent a.cookieConsentOK {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #F1D600;
+    color: #050202;
+    display: inline-block;
+    /* border-radius: 5px; */
+    text-shadow: aquamarine;
+    cursor: pointer;
+    font-family: monospace;
+    width: 200px;
+    margin: 0 60px 0 10px;
+    font-size: 23px;
+}
+.cookieConsent a.cookieConsentOK:hover {
+    background-color: #E0C91F;
+}
+/*Cookie Consent End*/
+
+.label-small {
+    display: inline-flex;
+    width: 150px;
+    border-radius: 15px;
+    background: #44be3c;
+    border: 1px solid #44be3c;
+    margin: 20px 20px 20px 5px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cookie-links{
+    font-family: monospace;
+    color: #b36767;
+}
+.cookie-plain-text{
+    font-family: monospace;
+    color: #b36767;
+}
+
+.bg-cover{
+	 /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  -webkit-transform: translate3d(0, -50px, 0);
+  -ms-transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
+
+  -webkit-transition: -webkit-transform .5s ease-out;
+  -ms-transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+
+.loading_modal {
+    background: rgba(91, 73, 73, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 9000;
+    padding: 1em;
+}
+
+[class*="overlayloader"] {
+  position: fixed;
+  z-index: 11000;
+  background: #fff;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlayloader--top-left {
+  left: 0;
+  top: 0;
+  margin-top: 1em;
+  margin-left: 1em;
+  transform: translate(0, 0);
+}
+.overlayloader--top {
+  left: 50%;
+  top: 0;
+  margin-top: 1em;
+  transform: translate(-50%, 0);
+}
+.overlayloader--top-right {
+  left: inherit;
+  right: 0;
+  top: 0;
+  margin-top: 1em;
+  margin-right: 1em;
+  transform: translate(0, 0);
+}
+.overlayloader--left {
+  left: 0;
+  margin-left: 1em;
+  transform: translate(0, -50%);
+}
+.overlayloader--right {
+  left: inherit;
+  right: 0;
+  margin-right: 1em;
+  transform: translate(0, -50%);
+}
+.overlayloader--bottom {
+  left: 50%;
+  top: inherit;
+  bottom: 0;
+  margin-bottom: 1em;
+  transform: translate(-50%, 0);
+}
+.overlayloader--bottom-left {
+  left: 0;
+  top: inherit;
+  bottom: 0;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  transform: translate(0, 0);
+}
+.overlayloader--bottom-right {
+  top: inherit;
+  left: inherit;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  transform: translate(0, 0);
+}
+
+.loading-indicator {
+    background-color: #d8dfe7;
+    color: #0d0b0b;
+    padding: 1em;
+    font-family: cursive;
+    text-align: center;
+}
+
+
+
+.pre_loader{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    margin-top: -13px;
+    border-radius: 60px;
+    animation: loader 0.8s linear infinite;
+    -webkit-animation: loader 0.8s linear infinite;
+}
+
+.mui-m-n {
+	margin: 0;
+    font-family: monospace;
+    color: black;
+}
+
+.noty_bar {
+	z-index : 9999;
+}
+
+#noty_topRight_layout_container,
+#noty_topRight_layout_container > li,
+#noty_bar, #noty_type_alert           {
+    width: 800px !important;
+}
+
+.main_label {
+	margin: 3px;
+    display: inline-block;
+    font-size: 13px;
+    /* color: #c4c4c4; */
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    -webkit-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    background: #252525;
+    font-family: monospace;
+    margin-right: 6px;
+}
+
+.img-team-icon-sidebar{
+	/*width: 150px;*/
+    height: 125px;	
+}
+
+.referral_link{    color: #ab6cb0;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: x-large;
+	cursor:pointer;
+}
+
+
+.mallu_gamers_logo img {
+    height: 150px;
+    max-width: 100%;
+}

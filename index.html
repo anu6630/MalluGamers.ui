@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Amin Template">
+<meta name="keywords" content="Amin, unica, creative, html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>MalluGamers.com | Daily Pubg tournaments from kerala </title>
+
+<!-- Google Font -->
+<link
+	href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap"
+	rel="stylesheet">
+
+<!-- Css Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="css/barfiller.css" type="text/css">
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/custom/style.css" type="text/css">
+</head>
+
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Humberger Menu Begin -->
+	<div class="humberger-menu-overlay"></div>
+	<div class="humberger-menu-wrapper">
+		<div class="hw-logo">
+			<a href="#"><img src="img/f-logo.png" alt=""></a>
+		</div>
+		<div class="hw-menu mobile-menu">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+					<ul class="dropdown">
+						<li><a href="./categories-list.html">Categories</a></li>
+						<li><a href="./categories-grid.html">Categories grid</a></li>
+						<li><a href="./typography.html">Typography</a></li>
+						<li><a href="./details-post-default.html">Post default</a></li>
+						<li><a href="./details-post-gallery.html">Post gallery</a></li>
+						<li><a href="./details-post-review.html">Post review</a></li>
+						<li><a href="./contact.html">Contact</a></li>
+					</ul></li>
+				<li><a href="#">Reviews <i class="fa fa-angle-down"></i></a>
+					<ul class="dropdown">
+						<li><a href="#">Playstation</a></li>
+						<li><a href="#">Windows</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="#">Xbox</a></li>
+					</ul></li>
+				<li><a href="#">Windows <i class="fa fa-angle-down"></i></a>
+					<ul class="dropdown">
+						<li><a href="#">Playstation</a></li>
+						<li><a href="#">Windows</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="#">Xbox</a></li>
+					</ul></li>
+				<li><a href="#">Videos <i class="fa fa-angle-down"></i></a>
+					<ul class="dropdown">
+						<li><a href="#">Playstation</a></li>
+						<li><a href="#">Windows</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="#">Xbox</a></li>
+					</ul></li>
+			</ul>
+		</div>
+		<div id="mobile-menu-wrap"></div>
+		<div class="hw-copyright">Copyright © 2019 Colorlib Inc. All
+			rights reserved</div>
+		<div class="hw-social">
+			<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+				class="fa fa-twitter"></i></a> <a href="#"><i
+				class="fa fa-youtube-play"></i></a> <a href="#"><i
+				class="fa fa-instagram"></i></a>
+		</div>
+		<div class="hw-insta-media">
+			<div class="section-title">
+				<h5>Instagram</h5>
+			</div>
+			<div class="insta-pic">
+				<img src="img/instagram/ip-1.jpg" alt=""> <img
+					src="img/instagram/ip-2.jpg" alt=""> <img
+					src="img/instagram/ip-3.jpg" alt=""> <img
+					src="img/instagram/ip-4.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- Humberger Menu End -->
+
+
+			 <!-- Header Section Begin -->
+		<header class="header-section" id="app_login_bar">
+			<div class="ht-options">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-8">
+							<div class="ht-widget">
+								<ul>
+									<li v-if="user.points"><i class="fa fa-money"></i> <span>{{user.points}} coins</span></li>
+									<li v-if="user.name"><i class="fa fa-user"></i> {{user.name}} </li>
+									<li v-else><i class="fa fa-user"></i> Not logged in </li>
+									<li  v-if="!user.name" class="signup-switch signup-open" v-on:click.prevent="force_show_login_page"><i class="fa fa-sign-out"></i> Login / Sign up
+									</li>
+									<li  v-else class="signup-switch signup-open" v-on:click.prevent="sign_out"><i class="fa fa-sign-out"></i> Sign-out
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-4">
+							<div class="ht-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-youtube-play"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	   
+		</header>
+		<!-- Header End -->
+
+
+
+
+
+
+	<!-- Update News Section Begin -->
+	<section class="update-news-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="section-title">
+						<div class="mallu_gamers_logo">
+							<img src="img/logos/VaKalikkam.PNG"/>
+							<hr/>
+						</div>
+						<h5>
+							<span> Upcoming Tournaments</span>
+						</h5>
+					</div>
+					<div class="tab-elem">
+						<ul class="nav nav-tabs" >
+							<li class="nav-item"><a class="nav-link active"
+								data-toggle="tab" href="#tabs-1" >All</a></li>
+							<li class="nav-item"><a class="nav-link" 
+								href="./games.html" >Games</a></li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="tabs-1"
+								role="tabpanel">
+								<div class="row">
+									<div class="un-slider owl-carousel">
+										<div class="col-lg-12">
+											<div class="un-big-item set-bg"
+												data-setbg="img/test_wrapper.jpg">
+												<div class="ub-text">
+													<div class="label">
+														<span>Reviews</span>
+													</div>
+													<h5>
+														<a href="#">Get one of our favorite nvme ssds, the 2tb
+															samsung 970 evo, for $120 less than nomal</a>
+													</h5>
+													<ul>
+														<li>by <span>Admin</span></li>
+														<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+														<li><i class="fa fa-comment-o"></i> 20</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tabs-2" role="tabpanel">
+								<div class="row">
+									<div class="un-slider owl-carousel">
+										<div class="col-lg-12">
+											<div class="un-big-item set-bg"
+												data-setbg="img/news/news-1.jpg">
+												<div class="ub-text">
+													<div class="label">
+														<span>Reviews</span>
+													</div>
+													<h5>
+														<a href="#">Get one of our favorite nvme ssds, the 2tb
+															samsung 970 evo, for $120 less than nomal</a>
+													</h5>
+													<ul>
+														<li>by <span>Admin</span></li>
+														<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+														<li><i class="fa fa-comment-o"></i> 20</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-3.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-4.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-2.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="un-big-item set-bg"
+												data-setbg="img/news/news-1.jpg">
+												<div class="ub-text">
+													<div class="label">
+														<span>Reviews</span>
+													</div>
+													<h5>
+														<a href="#">Get one of our favorite nvme ssds, the 2tb
+															samsung 970 evo, for $120 less than nomal</a>
+													</h5>
+													<ul>
+														<li>by <span>Admin</span></li>
+														<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+														<li><i class="fa fa-comment-o"></i> 20</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-3.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-4.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-2.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tabs-3" role="tabpanel">
+								<div class="row">
+									<div class="un-slider owl-carousel">
+										<div class="col-lg-12">
+											<div class="un-big-item set-bg"
+												data-setbg="img/news/news-1.jpg">
+												<div class="ub-text">
+													<div class="label">
+														<span>Reviews</span>
+													</div>
+													<h5>
+														<a href="#">Get one of our favorite nvme ssds, the 2tb
+															samsung 970 evo, for $120 less than nomal</a>
+													</h5>
+													<ul>
+														<li>by <span>Admin</span></li>
+														<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+														<li><i class="fa fa-comment-o"></i> 20</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-3.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-4.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-2.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="un-big-item set-bg"
+												data-setbg="img/news/news-1.jpg">
+												<div class="ub-text">
+													<div class="label">
+														<span>Reviews</span>
+													</div>
+													<h5>
+														<a href="#">Get one of our favorite nvme ssds, the 2tb
+															samsung 970 evo, for $120 less than nomal</a>
+													</h5>
+													<ul>
+														<li>by <span>Admin</span></li>
+														<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+														<li><i class="fa fa-comment-o"></i> 20</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-3.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-4.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-2.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tabs-4" role="tabpanel">
+								<div class="row">
+									<div class="un-slider owl-carousel">
+										<div class="col-lg-12">
+											<div class="un-big-item set-bg"
+												data-setbg="img/news/news-1.jpg">
+												<div class="ub-text">
+													<div class="label">
+														<span>Reviews</span>
+													</div>
+													<h5>
+														<a href="#">Get one of our favorite nvme ssds, the 2tb
+															samsung 970 evo, for $120 less than nomal</a>
+													</h5>
+													<ul>
+														<li>by <span>Admin</span></li>
+														<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+														<li><i class="fa fa-comment-o"></i> 20</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-3.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-4.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-2.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="un-big-item set-bg"
+												data-setbg="img/news/news-1.jpg">
+												<div class="ub-text">
+													<div class="label">
+														<span>Reviews</span>
+													</div>
+													<h5>
+														<a href="#">Get one of our favorite nvme ssds, the 2tb
+															samsung 970 evo, for $120 less than nomal</a>
+													</h5>
+													<ul>
+														<li>by <span>Admin</span></li>
+														<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+														<li><i class="fa fa-comment-o"></i> 20</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-3.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-4.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="un-item">
+														<div class="un_pic set-bg"
+															data-setbg="img/news/news-2.jpg">
+															<div class="label">
+																<span>Reviews</span>
+															</div>
+														</div>
+														<div class="un_text">
+															<h6>
+																<a href="#">Downwell and space hulk: tactics are
+																	coming to...</a>
+															</h6>
+															<ul>
+																<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+																<li><i class="fa fa-comment-o"></i> 20</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="sidebar-option">
+						<div class="social-media">
+							<div class="section-title">
+								<h5>Social media</h5>
+							</div>
+							<ul>
+								<li>
+									<div class="sm-icon">
+										<i class="fa fa-facebook"></i>
+									</div> <span>Facebook</span>
+									<div class="follow">1,2k Follow</div>
+								</li>
+								<li>
+									<div class="sm-icon">
+										<i class="fa fa-twitter"></i>
+									</div> <span>Twitter</span>
+									<div class="follow">1,2k Follow</div>
+								</li>
+								<li>
+									<div class="sm-icon">
+										<i class="fa fa-youtube-play"></i>
+									</div> <span>Youtube</span>
+									<div class="follow">2,3k Subs</div>
+								</li>
+								<li>
+									<div class="sm-icon">
+										<i class="fa fa-instagram"></i>
+									</div> <span>Instagram</span>
+									<div class="follow">2,6k Follow</div>
+								</li>
+							</ul>
+						</div>
+						<div class="hardware-guides" id="app_recent_teams_front_page">
+							<div class="section-title">
+								<h5>Recently joined teams</h5>
+							</div>
+							<div class="trending-item" v-for="team in teams">
+								<div class="ti-pic"  v-if="team.teamImage.url">
+									<img  v-bind:src="team.teamImage.url" class="img-team-icon-sidebar" alt="Team Image">
+								</div>
+								<div class="ti-text">
+									<h6>
+										<a v-bind:href="'team.html?team='+team.teamId">
+											{{team.teamName}}
+										</a>
+									</h6>
+									<ul>
+										<li v-if="team.joinDate && jQuery && jQuery.timeago"><i class="fa fa-clock-o"></i>Joined {{jQuery.timeago(new Date(team.joinDate)) }}</li>
+										<li v-else><i class="fa fa-clock-o"></i>Joined recently</li>
+									</ul>
+								</div>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Update News Section End -->
+
+
+
+	
+
+	<!-- Footer Section Begin -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="footer-about">
+						<div class="fa-logo">
+							<a href="#"><img src="/img/logos/VaKalikkam.PNG" alt=""></a>
+						</div>
+						<p>
+						malluGamers.club@gmail.com<br/>
+						whatapp : +91-9562266686
+						
+						</p>
+						<div class="fa-social">
+							<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+								class="fa fa-twitter"></i></a> <a href="#"><i
+								class="fa fa-youtube-play"></i></a> <a href="#"><i
+								class="fa fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="editor-choice">
+						<div class="section-title">
+							<h5>Editor's Choice</h5>
+						</div>
+						<div class="ec-item">
+							
+							<div class="ec-text">
+								<h6>
+									<a href="#"> - Give ur feedbacks we are listening </a>
+								</h6>
+					
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="tags-cloud">
+						<div class="section-title">
+							<h5>Tags Cloud</h5>
+						</div>
+						<div class="tag-list">
+						    <a href="#"><span>#Lock Down games</span></a>
+							<a href="#"><span>#Kerala Esports </span></a> 
+							<a href="#"><span>PubG  Tuournaments </span></a>
+							<a href="#"><span>തോറ്റ പ്രധാനമന്ത്രി </span></a> 
+							<a href="#"><span>കേറി വാടാ  മക്കളെ </span></a> 
+							<a href="#"><span>#മല്ലു  Gaming</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-area">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="ca-text">
+							<p>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script>
+								All rights reserved | This template is made with <i
+									class="fa fa-heart" aria-hidden="true"></i> by <a
+									href="https://colorlib.com" target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ca-links">
+							<a href="#">About</a> <a href="#">Subscribe</a> <a href="#">Contact</a>
+							<a href="#">Support</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Section End -->
+
+    <!-- Sign Up Section Begin -->
+    <div class="signup-section" id="app_pop_up">
+        <div class="signup-close"><i class="fa fa-close"></i></div>
+        <div class="signup-text">
+            <div class="container">
+				<div id="login-related-container" v-if="is_auth">
+				<h2 v-if="notification">{{notification}}</h2>
+				 <div class="signup-title">
+            	 	 <h2>Register or login using google account</h2>
+            	 </div>
+            	 <form action="#" class="signup-form" v-on:submit.prevent="google_login_go">
+            		 <div class="social-login">
+            	 		<button type="submit" id="button-login-google" class="social-btn" v-on:click.prevent="google_login_go">
+            	 			<img src="/img/logos/glogo.png" alt="Google"/>
+            	 			<span>Log in with Google</span>
+                		 </button>
+                	</div>
+                </form>
+               <hr/>
+                <div id="sign-up-area" v-if="show_registration">
+                <div class="signup-title">
+                    <h2>Sign up</h2>
+                    <p>Fill out the form below to recieve a free and confidential</p>
+                </div>
+                <form action="#" class="signup-form" id="signup-form" v-on:submit.prevent="act_register_submit">
+                    <div class="sf-input-list">
+                        <input name="name" type="text" class="input-value" placeholder="Name *" autocomplete="false" required/>
+                        <input name="password" type="password" class="input-value" placeholder="Password" required/>
+                        <input name="email" type="email" class="input-value" placeholder="Email Address" required/>
+                    </div>
+                    <div class="radio-check">
+                        <label for="rc-agree">I agree with the term & conditions and I'm 18+
+                            <input type="checkbox" id="rc-agree">
+                            <span class="checkbox"></span>
+                        </label>
+                    </div>
+                    <button type="submit" id="signup-form-submit" v-on:click.prevent="act_register_submit"><span>REGISTER NOW</span></button>
+                </form>
+                <p id="show-login-link" class="login-sign-up-link" v-on:click="act_show_login">Already have an accout? Login here</p>
+                </div>
+                <div id="login-area" v-if="show_login">
+                <div class="signup-title">
+                    <h2>Login</h2>
+                    <p>Login with your email and password</p>
+                </div>
+                <form action="#" class="signup-form" id="login-form" v-on:submit.prevent="act_login_submit">
+                    <div class="sf-input-list">
+                    	<input name="email" type="email" class="input-value" placeholder="Email Address" required/>
+                        <input name="password" type="password" class="input-value" placeholder="Password" required/>
+                        
+                    </div>
+                    <button type="submit" id="login-form-submit" v-on:click.prevent="act_login_submit"><span>Login</span></button>
+                </form>
+                <p id="show-sign-up-link" class="login-sign-up-link" v-on:click="act_show_register"> Don't have an accout yet? Sign up in a minute</p>
+                </div>
+				</div>		
+				<div id="match-related-container" v-else>
+					<div v-if="show_create_team">
+						<div class="signup-title">
+							<p><b>Create team for match</b></p>
+							<h2 v-if="requestedMatch">{{requestedMatch.name}} </h2>
+							<p> You will be auto assigned as the leader </p>
+						</div>
+						<form action="#" class="signup-form" id="create-team-form" v-on:submit.prevent="act_register_submit_match">
+							<div class="sf-input-list">
+								<input name="teamName" type="text" class="input-value" placeholder="Team name" required/>
+								<input name="mobileNumber" type="text" class="input-value" placeholder="Mobile Number(*whatapp prefferred)" required/>
+							</div>
+							<button type="submit" id="login-form-submit" v-on:submit.click="act_register_submit_match"><span>Register your team Now</span></button>
+						</form>
+					</div>
+					
+					<div v-if="show_join_team" >
+						<div class="signup-title">
+							<h2 v-if="requestedTeam"> Join team {{requestedTeam.teamName}} </h2>
+							<p> Click here to view team details </p>
+						</div>
+						<form action="#" class="signup-form" id="join-team-form" v-on:submit.prevent="act_join_submit_team">	
+							<button type="submit" id="login-form-submit" v-on:submit.click="act_join_submit_team"><span>Accept and Join {{requestedTeam.teamName}}</span></button>
+						</form>
+					</div>
+					
+				</div>
+            	
+			
+                
+               
+            </div>
+        </div>
+    </div>
+    <!-- Sign Up Section End -->
+
+	<!-- Search model Begin -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+	<!-- Js Plugins -->
+
+    <!-- Js Plugins -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+   	<script src="js/custom/util.js"></script>
+    <script src="js/custom/vuecode.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+	<script src="js/jquery.timeago.js" type="text/javascript"></script>
+</body>
+
+</html>
