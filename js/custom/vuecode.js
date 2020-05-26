@@ -1,6 +1,6 @@
 var app_invite_team = {}; 
 document.app_cache = {};
-localStorage.setItem("UI_BASE_URL","http://localhost:3000");
+localStorage.setItem("UI_BASE_URL","https://mallugamers.com);
 // Apps
 
 
@@ -34,14 +34,14 @@ function attach_timer(element,dateString) {
 	var countdownTimer = setInterval(function(){clockwork(element)}, 1000);
 }
 function get_me_request() {
-	//http://localhost:8080/auth/me
+	//https://mallugamers.com8080/auth/me
     return request({
         url: API_BASE_URL + "/auth/me",
         method: 'GET'
     });
 }
 function getMyTeamAndMatchDetails(id){
-	//http://localhost:8080/game/mydata
+	//https://mallugamers.com8080/game/mydata
     return request({
         url: API_BASE_URL + "/game/mydata?userId=" + id,
         method: 'GET'
@@ -49,7 +49,7 @@ function getMyTeamAndMatchDetails(id){
 }
 
 function register_team_request(teamRequest) {
-	//http://localhost:8080/game/match/1/create
+	//https://mallugamers.com8080/game/match/1/create
     return request({
         url: API_BASE_URL + "/game/match/"+ teamRequest.matchId +"/create",
         method: 'POST',
@@ -58,7 +58,7 @@ function register_team_request(teamRequest) {
 }
 
 function join_team_request(teamRequest) {
-	//http://localhost:8080/game/match/1/create
+	//https://mallugamers.com8080/game/match/1/create
     return request({
         url: API_BASE_URL + "/game/team/"+ teamRequest.teamToken +"/join",
         method: 'POST'
@@ -68,7 +68,7 @@ function join_team_request(teamRequest) {
 function fetch_team_data_by_team_id(id){	
 	var url =  API_BASE_URL + "/game/teambyid";
 	url = url + "?team_id=" + id;
-	//http://localhost:8080/game/teambyid?team=1&match=1
+	//https://mallugamers.com8080/game/teambyid?team=1&match=1
 	 return request({
 	        url: url,
 	        method: 'GET'
@@ -77,7 +77,7 @@ function fetch_team_data_by_team_id(id){
 
 function fetch_recent_teams(){	
 	var url =  API_BASE_URL + "/game/teams";
-	//http://localhost:8080/game/teams
+	//https://mallugamers.com8080/game/teams
 	 return request({
 	        url: url,
 	        method: 'GET'
@@ -94,7 +94,7 @@ function fetch_team_data_team_id_match_id(token, matchId){
 	} else {
 		url = url + "?match=" + matchId;
 	}
-	//http://localhost:8080/game/teambyid?team=1&match=1
+	//https://mallugamers.com8080/game/teambyid?team=1&match=1
 	 return request({
 	        url: url,
 	        method: 'GET'
@@ -102,14 +102,14 @@ function fetch_team_data_team_id_match_id(token, matchId){
 }
 
 function fetch_match_data_by_id(matchId){
-	//http://localhost:8080/matches/1
+	//https://mallugamers.com8080/matches/1
 	  return request({
 	        url: API_BASE_URL + "/matches/"+ matchId,
 	        method: 'GET'
 	    });
 }
 function fetch_match_request(offset) {
-	//http://localhost:8080/game/matches?count=10&offset=0
+	//https://mallugamers.com8080/game/matches?count=10&offset=0
     return request({
         url: API_BASE_URL + "/game/matches?count=10&offset="+ offset,
         method: 'GET'

@@ -1,5 +1,5 @@
-var API_BASE_URL = "http://localhost:8080";
-var UI_BASE_URL ="http://localhost:3000";
+var API_BASE_URL = "https://mallugamers.com:8080";
+var UI_BASE_URL ="https://mallugamers.com";
 var ACCESS_TOKEN = "token";
 
 function showLoader(){

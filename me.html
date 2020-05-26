@@ -183,7 +183,7 @@
 									<p v-if="match.gameName">{{match.gameName}}</p>
 										<div>
 											
-											<a href="#" class="main_label" v-if="loggedUser"> <b>Referral link : http://localhost:3000/match-details.html?match={{match.id}}&referral={{user.id}}</b></a>
+											<a href="#" class="main_label" v-if="loggedUser"> <b>Referral link : https://mallugamers.com/match-details.html?match={{match.id}}&referral={{user.id}}</b></a>
 										</div>
 									</div>
 									
@@ -212,8 +212,8 @@
                             <div class="ds-title">Referral Link <small>(Click link to copy)</small></div>
                             <div class="">
 							
-                                <span id="copy_referral_link" data-clipboard-action="copy" v-bind:data-clipboard-text="'http://localhost:3000/match-details.html?user=' + user.id " class="referral_link">
-								http://localhost:3000/match-details.html?user={{user.id}}
+                                <span id="copy_referral_link" data-clipboard-action="copy" v-bind:data-clipboard-text="'https://mallugamers.com/match-details.html?user=' + user.id " class="referral_link">
+								https://mallugamers.com/match-details.html?user={{user.id}}
 								</span> 
 								
                             </div>
