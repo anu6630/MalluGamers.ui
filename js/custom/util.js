@@ -1,5 +1,15 @@
-var API_BASE_URL = "http://mallugamers.com:8080";
-var UI_BASE_URL ="https://mallugamers.com";
+var API_BASE_URL = null;
+var UI_BASE_URL = null;
+
+if(!isDebugMode()){
+	API_BASE_URL = "http://mallugamers.com:8080";
+	UI_BASE_URL ="https://mallugamers.com";
+} else {
+	API_BASE_URL = "http://localhost:8080";
+	UI_BASE_URL ="http://localhost:3000";
+}
+
+
 var ACCESS_TOKEN = "token";
 
 function showLoader(){
@@ -96,6 +106,12 @@ function alertWrapper(msg,type){
 
 
 
+function isDebugMode(){
+	if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === ""){
+		return true;
+	}
+	return false;
+}
 
 function googleLoginRedirect(url){
 	localStorage.setItem("redirect_uri_private",url);

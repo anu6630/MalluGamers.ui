@@ -122,7 +122,7 @@
 							<div class="ht-widget">
 								<ul>
 									<li v-if="user.points"><i class="fa fa-money"></i> <span>{{user.points}} coins</span></li>
-									<li v-if="user.name"><i class="fa fa-user"></i> {{user.name}} </li>
+									<li v-if="user.name"><a v-bind:href="'./me.html?user='+user.id"><i class="fa fa-user"></i> {{user.name}}</a> </li>
 									<li v-else><i class="fa fa-user"></i> Not logged in </li>
 									<li  v-if="!user.name" class="signup-switch signup-open" v-on:click.prevent="force_show_login_page"><i class="fa fa-sign-out"></i> Login / Sign up
 									</li>
@@ -181,8 +181,8 @@
 									<div class="un-slider owl-carousel">
 										<div class="col-lg-12">
 											<div class="un-big-item set-bg"
-												data-setbg="img/test_wrapper.jpg">
-												<div class="ub-text">
+												data-setbg="https://img.techpowerup.org/200527/pubg-poster-main-1.png">
+												<!--div class="ub-text">
 													<div class="label">
 														<span>Reviews</span>
 													</div>
@@ -195,7 +195,7 @@
 														<li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
 														<li><i class="fa fa-comment-o"></i> 20</li>
 													</ul>
-												</div>
+												</div-->
 											</div>
 											<div class="row">
 												

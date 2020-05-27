@@ -1,6 +1,11 @@
 var app_invite_team = {}; 
 document.app_cache = {};
-localStorage.setItem("UI_BASE_URL","https://mallugamers.com");
+if(isDebugMode()){
+	localStorage.setItem("UI_BASE_URL","https://mallugamers.com");
+} else {
+	localStorage.setItem("UI_BASE_URL","http://localhost:3000");
+}
+
 // Apps
 
 
