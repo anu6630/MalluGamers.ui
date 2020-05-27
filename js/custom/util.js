@@ -1,4 +1,4 @@
-var API_BASE_URL = "https://mallugamers.com:8080";
+var API_BASE_URL = "http://mallugamers.com";
 var UI_BASE_URL ="https://mallugamers.com";
 var ACCESS_TOKEN = "token";
 
