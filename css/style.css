@@ -1202,7 +1202,7 @@ ol {
 
 .trending-item {
 	overflow: hidden;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 .trending-item:last-child {
@@ -1432,7 +1432,7 @@ ol {
 
 .update-news-section {
 	background: #0d0d0d;
-	padding-top: 65px;
+	padding-top: 12px;
 	padding-bottom: 30px;
 }
 
@@ -2449,7 +2449,7 @@ ol {
 
 .categories-list-section {
 	background: #0d0d0d;
-	padding: 70px 0;
+	padding: 10px 0;
 }
 
 .cl-item {
@@ -2492,6 +2492,7 @@ ol {
 .cl-item .cl-text h5 {
 	margin-bottom: 8px;
 	margin-top: 14px;
+
 }
 
 .cl-item .cl-text h5 a {

@@ -315,6 +315,40 @@
 
 
 .mallu_gamers_logo img {
-    height: 150px;
+    height: 60px;
     max-width: 100%;
+}
+
+
+.mallu_gamers_game_card {
+	background-color : #252525;
+}
+
+.mallu_gamers_button_red {
+  background: #f33b44;
+  background-color: #ef0034;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ef0034;
+  border-color: #ef0034;
+  margin-top : 3px;
+  margin-left :5px;
+  padding : 5px;
+}
+
+.mallu_gamers_button_red a {
+  color : #fff;
+}
+
+.mallu_gamers_match_info {
+	color : white;
+	font-family: lato,sans-serif;
+	font-size:12px;
+	padding : 5px;
+}
+
+.mallu_nav_sticky {
+	top: 0;
+    z-index: 5;
+    position: sticky;
 }

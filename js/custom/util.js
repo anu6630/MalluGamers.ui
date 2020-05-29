@@ -135,11 +135,6 @@ function hasHash(){
 
 
 
-$(document).ready(function(){   
-    setTimeout(function () {
-        $("#app_invite_team").fadeIn(100);
-     }, 500);
-}); 
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
@@ -171,3 +166,12 @@ function getStoredFunctionFromLocalStorage(){
 	}
 	return null;
 }
+
+$(function(){   
+    setTimeout(function () {
+		if(document.getElementById("app_invite_team")){
+		 $("#app_invite_team").fadeIn(100);	
+		}
+       
+     }, 500);
+}); 
