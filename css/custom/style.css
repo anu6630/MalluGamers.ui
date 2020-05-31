@@ -352,3 +352,96 @@
     z-index: 5;
     position: sticky;
 }
+
+.owl_carousel_sliding_banners_matches_item img{
+	height : 300px;
+}
+
+
+/* For user section */
+._user_carousel_carousel-list {
+    list-style-type: none;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    transition: transform 0.8s ease-in-out 0s;
+}
+._user_carousel_list-item {
+    float: left;
+    width: 242px;
+    height: 280px;
+    margin-bottom: 12px;
+    margin-right: 24px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+    padding: 32px 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(22, 24, 35, 0.12);
+    border-image: initial;
+    border-radius: 8px;
+    transition: all 0.15s linear 0s;
+	background-color : #1a1a1a;
+}
+
+_user_carousel_carousel-wrapper a {
+    color: inherit;
+    display: block;
+	color : white;
+}
+
+._user_carousel_avatar {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-color: rgba(22, 24, 35, 0.1);
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+
+._user_carousel_title {
+    font-size: 20px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: proxima-semibold, PingFangSC, sans-serif;
+    font-weight: 600;
+    margin: 12px auto 0px;
+    overflow: hidden;
+	color : white;
+}
+
+._user_carousel_sub-title {
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	font-family: monospace;
+	
+}
+
+._user_carousel_followers {
+    font-size: 17px;
+    line-height: 20px;
+    font-family: proxima-semibold, PingFangSC, sans-serif;
+    font-weight: 600;
+    margin: 14px auto;
+}
+._user_carousel_followers-text {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(125, 108, 108);;
+    font-family: proxima-regular, PingFangSC, sans-serif;
+    font-weight: 400;
+}
+
+._user_carousel_avatar.round {
+    border-radius: 50%;
+}

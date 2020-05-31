@@ -859,3 +859,31 @@ function(){
 	
 	}
 );
+
+
+//$(
+//function(){
+//	$(".owl-carousel").owlCarousel({
+//    margin: 10,
+//	nav:true,
+//    loop: true,
+//    items: 1,
+//	stagePadding: 100,
+//	autoWidth:true,
+//	responsive:{
+//        0:{
+//            items:1
+//        },
+//        600:{
+//            items:3
+//        },
+//        1000:{
+//            items:5
+//        }
+//    }
+//  });
+//	
+//}
+//);
+
+
